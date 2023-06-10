@@ -1,0 +1,32 @@
+.wrapper {
+  width: 90%;
+  margin-inline: auto;
+  max-width: 900px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  list-style: none;
+  color: brown;
+}
+
+nav li a:hover {
+  color: rgb(159, 79, 235);
+}
+
+/* nav li a:visited {
+  color: blueviolet;
+} */
+
+.current-page {
+  color: rgb(119, 50, 184);
+  font-size: 1.2rem;
+}
