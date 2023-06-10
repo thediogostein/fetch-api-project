@@ -1,10 +1,7 @@
-const url = 'https://jsonplaceholder.typicode.com';
-
-function addUserToDOM(users) {
+function addToDOM(users) {
   const postsContainer = document.getElementById('users-container');
 
   for (let user of users) {
-    console.log(user);
     const li = document.createElement('li');
     const nameEl = document.createElement('h3');
     const userNameEl = document.createElement('p');
@@ -21,14 +18,16 @@ function addUserToDOM(users) {
 
 async function getUsers() {
   try {
-    const response = await fetch(url + '/users/?_limit=5');
+    const response = await fetch(
+      'https://jsonplaceholder.typicode.com/users/?_limit=5'
+    );
 
     if (!response.ok) {
       throw new Error('HTTP error: ' + response.status);
     }
     const data = await response.json();
 
-    addUserToDOM(data);
+    addToDOM(data);
   } catch (error) {
     console.log(error);
   }
