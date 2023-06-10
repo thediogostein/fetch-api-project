@@ -4,7 +4,6 @@ function addToDOM(posts) {
   const postsContainer = document.getElementById('posts-container');
 
   for (post of posts) {
-    console.log(post);
     const li = document.createElement('li');
     const title = document.createElement('h3');
     const body = document.createElement('p');
