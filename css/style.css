@@ -34,4 +34,5 @@ nav li a:hover {
 .current-page {
   color: rgb(119, 50, 184);
   font-size: 1.2rem;
+  font-weight: 900;
 }
